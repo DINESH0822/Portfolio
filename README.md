@@ -1,26 +1,36 @@
 # Recruiter-Focused Full Stack Developer Portfolio
 
-This portfolio is deployed as a frontend-only application using Vercel and Web3Forms for contact form delivery. The complete FastAPI backend with JWT authentication, MongoDB integration and REST APIs remains in the repository to demonstrate full stack development skills.
+This portfolio is deployed as a frontend-only application using Vercel and Web3Forms for contact form delivery. The complete FastAPI backend with JWT authentication, MongoDB Atlas integration, CRUD APIs and Admin Panel remains inside this repository to demonstrate Full Stack Development skills.
+
+## 🌐 Live Demo
+
+**Portfolio:** https://portfolio-red-delta-99.vercel.app/
+
+**GitHub Repository:** https://github.com/DINESH0822/Portfolio
 
 ---
 
 ## 🚀 Tech Stack
 
 ### Frontend
-- **Framework**: React 19 (Vite)
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Routing**: React Router
-- **HTTP Client**: Axios
-- **Icons**: Lucide React
+- React 19
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router
+- Native Fetch API
 
 ### Backend
-- **Framework**: Python FastAPI
-- **Authentication**: JWT (JSON Web Tokens) with Secure Bcrypt Hashing
-- **Database Connector**: PyMongo (MongoDB Atlas client)
+- Python
+- FastAPI
+- JWT Authentication
+- MongoDB Atlas
 
-### Database
-- **Database**: MongoDB Atlas *(Gracefully falls back to a custom in-memory Database for local testing if credentials are absent)*
+### Deployment
+- Vercel
+
+### Contact Service
+- Web3Forms
 
 ---
 
@@ -130,9 +140,9 @@ cd Portfolio
    ```bash
    npm install
    ```
-3. Create a `.env` file in the `frontend/` directory to configure the API endpoint:
+3. Create a `.env` file in the `frontend/` directory to configure the Web3Forms key:
    ```env
-   VITE_API_URL=http://localhost:8000
+   VITE_WEB3FORMS_KEY=YOUR_ACCESS_KEY
    ```
 4. Start the Vite dev server:
    ```bash
@@ -149,3 +159,18 @@ cd Portfolio
   - **Username**: `admin`
   - **Password**: `admin123`
 - Inside the portal, you can view submitted messages from the contact form, create new project listings, edit details, or remove projects.
+
+---
+
+## 🌐 Deployment
+
+Frontend:
+- Vercel
+- https://portfolio-red-delta-99.vercel.app/
+
+Contact Form:
+- Web3Forms
+
+Backend:
+- FastAPI backend source code is included in this repository for demonstration purposes.
+- Backend is intentionally not deployed publicly.
