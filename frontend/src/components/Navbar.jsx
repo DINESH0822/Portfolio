@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
-import { Menu, X, Shield } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const navItems = [
@@ -104,20 +104,10 @@ export default function Navbar() {
                 )}
               </button>
             ))}
-            <Link
-              to="/admin"
-              className="ml-2 p-2 text-[#9CA3AF] hover:text-[#2563EB] hover:bg-[#EFF6FF] rounded-lg transition-all duration-200"
-              title="Admin"
-            >
-              <Shield className="w-4 h-4" />
-            </Link>
           </nav>
 
           {/* Mobile */}
           <div className="flex items-center gap-2 lg:hidden">
-            <Link to="/admin" className="p-2 text-[#9CA3AF] hover:text-[#2563EB] rounded-lg">
-              <Shield className="w-5 h-5" />
-            </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 text-[#6B7280] hover:text-[#111827] hover:bg-[#F8FAFC] rounded-lg transition-all"

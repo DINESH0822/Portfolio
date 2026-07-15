@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { ExternalLink, Check, Star, Filter } from 'lucide-react';
-import axios from 'axios';
 import { Github } from './BrandIcons';
 
 /* ─── SVG Mockup Illustrations ─────────────────────────────────────── */
@@ -187,14 +186,9 @@ const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.1 } } };
 const fadeUp = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16,1,0.3,1] } } };
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [projects, setProjects] = useState(FALLBACK);
+  const [loading, setLoading] = useState(false);
   const [filter, setFilter] = useState('all');
-  const API = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-
-  useEffect(() => {
-    axios.get(`${API}/api/projects`).then(r => setProjects(r.data?.length ? r.data : FALLBACK)).catch(() => setProjects(FALLBACK)).finally(() => setLoading(false));
-  }, []);
 
   const featured = projects.find(p => p.is_featured);
   const others = projects.filter(p => !p.is_featured).filter(p => {

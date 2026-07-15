@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, AlertCircle, CheckCircle } from 'lucide-react';
 import { Github, Linkedin } from './BrandIcons';
-import axios from 'axios';
 
 const contactInfo = [
   { icon: Mail, label: 'Email', value: 'dinesh.m8481@gmail.com', href: 'mailto:dinesh.m8481@gmail.com', color: '#2563EB', bg: '#EFF6FF' },
@@ -33,7 +32,6 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState({ type: '', text: '' });
-  const API = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
   const onChange = (e) => { setForm(f => ({ ...f, [e.target.name]: e.target.value })); if (status.text) setStatus({ type: '', text: '' }); };
 
@@ -43,13 +41,39 @@ export default function Contact() {
       setStatus({ type: 'error', text: 'Please fill in all fields.' });
       return;
     }
+    
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY;
+    if (!accessKey) {
+      setStatus({ type: 'error', text: 'Contact form setup is incomplete (missing access key).' });
+      return;
+    }
+
     setLoading(true);
     try {
-      await axios.post(`${API}/api/contacts`, form);
-      setStatus({ type: 'success', text: 'Message sent! I\'ll get back to you shortly.' });
-      setForm({ name: '', email: '', subject: '', message: '' });
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message
+        })
+      });
+      
+      const result = await response.json();
+      if (response.ok && result.success) {
+        setStatus({ type: 'success', text: 'Message sent! I\'ll get back to you shortly.' });
+        setForm({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus({ type: 'error', text: result.message || 'Failed to send message.' });
+      }
     } catch (err) {
-      setStatus({ type: 'error', text: err.response?.data?.detail || 'Failed to send. Please try again.' });
+      setStatus({ type: 'error', text: 'Failed to send. Please try again.' });
     } finally {
       setLoading(false);
     }

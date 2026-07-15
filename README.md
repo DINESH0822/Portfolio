@@ -1,6 +1,6 @@
 # Recruiter-Focused Full Stack Developer Portfolio
 
-A premium, modern, and recruiter-focused Full Stack Personal Portfolio website designed for **M Dinesh**. Inspired by high-end tech corporate landing pages (such as Stripe, Vercel, and Linear), this application showcases academic accomplishments, technical skill proficiencies, internship milestones, and built projects with a clean corporate design, animations, and a secure administration panel.
+This portfolio is deployed as a frontend-only application using Vercel and Web3Forms for contact form delivery. The complete FastAPI backend with JWT authentication, MongoDB integration and REST APIs remains in the repository to demonstrate full stack development skills.
 
 ---
 
