@@ -69,6 +69,9 @@ export default function Contact() {
       if (response.ok && result.success) {
         setStatus({ type: 'success', text: 'Message sent! I\'ll get back to you shortly.' });
         setForm({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => {
+          setStatus(s => s.type === 'success' ? { type: '', text: '' } : s);
+        }, 3000);
       } else {
         setStatus({ type: 'error', text: result.message || 'Failed to send message.' });
       }
