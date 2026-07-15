@@ -1,0 +1,40 @@
+# Root gitignore
+
+# Dependencies
+**/node_modules/
+**/venv/
+**/env/
+**/.venv/
+**/ENV/
+
+# Production build artifacts
+**/dist/
+**/build/
+
+# Environment files and credentials
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# Python caches and compiles
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache/
+**/.ipynb_checkpoints/
+
+# IDE/Editor config
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
