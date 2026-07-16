@@ -41,7 +41,7 @@ INITIAL_PROJECTS = [
             "REST APIs", "Layered Architecture"
         ],
         "live_url": None,
-        "github_url": "https://github.com/DINESH0822",
+        "github_url": "https://github.com/DINESH0822/springboot-oracle-jpa-hibernate",
         "is_featured": False,
         "image_placeholder_type": "database"
     },
@@ -55,7 +55,7 @@ INITIAL_PROJECTS = [
             "Timestamp Logging"
         ],
         "live_url": None,
-        "github_url": "https://github.com/DINESH0822",
+        "github_url": "https://github.com/DINESH0822/Network-Based-Smart-Attendance-System",
         "is_featured": False,
         "image_placeholder_type": "network"
     },
@@ -69,7 +69,7 @@ INITIAL_PROJECTS = [
             "Interactive Password Checker"
         ],
         "live_url": None,
-        "github_url": "https://github.com/DINESH0822",
+        "github_url": "https://github.com/DINESH0822/password-strength-analyzer",
         "is_featured": False,
         "image_placeholder_type": "security"
     }

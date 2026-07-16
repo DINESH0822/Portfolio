@@ -158,21 +158,21 @@ const FALLBACK = [
     description: 'A comprehensive employee tracking system built with Java and Spring Boot, utilizing Hibernate ORM with Oracle Database and layered REST architecture.',
     tech_stack: ['Java', 'Spring Boot', 'Hibernate', 'Oracle XE', 'REST API', 'Maven'],
     features: ['CRUD Operations', 'Employee Search', 'REST APIs', 'Layered Architecture'],
-    live_url: null, github_url: 'https://github.com/DINESH0822', is_featured: false, image_placeholder_type: 'database',
+    live_url: null, github_url: 'https://github.com/DINESH0822/springboot-oracle-jpa-hibernate', is_featured: false, image_placeholder_type: 'database',
   },
   {
     _id: 'nas', title: 'Network Smart Attendance System', subtitle: 'LAN-based Socket Attendance Logger',
     description: 'A Java desktop application using socket connections for automatic attendance logging over LAN, validating client IPs and timestamping records.',
     tech_stack: ['Java', 'Networking', 'Socket Programming', 'File IO'],
     features: ['Automatic Attendance', 'IP Validation', 'Timestamp Logging'],
-    live_url: null, github_url: 'https://github.com/DINESH0822', is_featured: false, image_placeholder_type: 'network',
+    live_url: null, github_url: 'https://github.com/DINESH0822/Network-Based-Smart-Attendance-System', is_featured: false, image_placeholder_type: 'network',
   },
   {
     _id: 'psa', title: 'Password Strength Analyzer', subtitle: 'Regex-Driven Interactive Security Tool',
     description: 'An interactive web utility that validates password complexity using cryptographic patterns and provides live strength feedback with actionable suggestions.',
     tech_stack: ['Python', 'HTML', 'CSS', 'JavaScript', 'Regex'],
     features: ['Regex Validation', 'Strength Detection', 'Live Feedback', 'Interactive UI'],
-    live_url: null, github_url: 'https://github.com/DINESH0822', is_featured: false, image_placeholder_type: 'security',
+    live_url: null, github_url: 'https://github.com/DINESH0822/password-strength-analyzer', is_featured: false, image_placeholder_type: 'security',
   },
 ];
 
