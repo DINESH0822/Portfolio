@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M DINESH – Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 10.5pt;
+      color: #111;
+      background: #fff;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 28px 36px;
+      line-height: 1.4;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .header h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #000;
+      margin-bottom: 3px;
+    }
+    .header .contact-line {
+      font-size: 10pt;
+      color: #222;
+      margin-bottom: 2px;
+    }
+    .header .contact-line a {
+      color: #1155CC;
+      text-decoration: none;
+    }
+
+    /* ── Section ── */
+    .section {
+      margin-top: 10px;
+    }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #1155CC;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      border-bottom: 1.5px solid #1155CC;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    /* ── Career Objective ── */
+    .objective-text {
+      font-size: 10pt;
+      line-height: 1.5;
+      color: #111;
+    }
+
+    /* ── Education Table ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10pt;
+    }
+    table th {
+      background: #f5f5f5;
+      font-weight: 700;
+      padding: 5px 8px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    table td {
+      padding: 5px 8px;
+      border: 1px solid #ccc;
+    }
+    table tr:first-child td,
+    table tr:first-child th {
+      border-top: 1px solid #ccc;
+    }
+
+    /* ── Technical Skills 2-column ── */
+    .skills-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 20px;
+    }
+    .skill-row {
+      font-size: 10pt;
+      line-height: 1.55;
+    }
+    .skill-label {
+      font-weight: 700;
+    }
+
+    /* ── Entries ── */
+    .entry {
+      margin-bottom: 7px;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .entry-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+    .entry-org {
+      font-weight: 700;
+      font-size: 10pt;
+    }
+    .entry-date {
+      font-size: 10pt;
+      color: #444;
+      white-space: nowrap;
+      margin-left: 8px;
+    }
+    .tech-tags {
+      font-size: 9.5pt;
+      color: #444;
+      font-style: italic;
+      display: block;
+      margin-top: 1px;
+    }
+    .entry-link {
+      font-size: 9.5pt;
+      color: #1155CC;
+      text-decoration: none;
+      margin-left: 6px;
+      white-space: nowrap;
+    }
+    ul {
+      margin: 3px 0 0 18px;
+    }
+    ul li {
+      font-size: 10pt;
+      margin-bottom: 2px;
+      line-height: 1.4;
+    }
+
+    /* ── Certs / Achievements ── */
+    .simple-list {
+      margin: 0 0 0 18px;
+    }
+    .simple-list li {
+      font-size: 10pt;
+      margin-bottom: 2px;
+      line-height: 1.4;
+    }
+
+    @media print {
+      body { padding: 18px 26px; }
+      a { color: #1155CC !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>M DINESH</h1>
+    <div class="contact-line">
+      <a href="mailto:dinesh.m8481@gmail.com">dinesh.m8481@gmail.com</a>
+      &nbsp;|&nbsp; +91 7842760116
+    </div>
+    <div class="contact-line">
+      <a href="https://www.linkedin.com/in/dinesh-m-8294802bb" target="_blank">linkedin.com/in/dinesh-m-8294802bb</a>
+      &nbsp;|&nbsp;
+      <a href="https://github.com/DINESH0822" target="_blank">github.com/DINESH0822</a>
+    </div>
+  </div>
+
+  <!-- CAREER OBJECTIVE -->
+  <div class="section">
+    <div class="section-title">Career Objective</div>
+    <p class="objective-text">
+      Computer Science Engineering professional with hands-on experience in Java, Spring Boot, and Oracle
+      Database, seeking a Software Engineer role to apply software development skills in building reliable, scalable
+      applications while continuously enhancing technical expertise.
+    </p>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Qualification</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>Percentage / CGPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>B Tech (CSE)</strong></td>
+          <td>Kuppam Engineering College</td>
+          <td>2023-2027</td>
+          <td>7.5 CGPA</td>
+        </tr>
+        <tr>
+          <td><strong>Intermediate (M.P.C)</strong></td>
+          <td>Vikas Junior College</td>
+          <td>2021-2023</td>
+          <td>75%</td>
+        </tr>
+        <tr>
+          <td><strong>SSC</strong></td>
+          <td>Adarsha High School</td>
+          <td>2020-2021</td>
+          <td>95%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-two-col">
+      <div class="skill-row"><span class="skill-label">Backend:</span> Spring Boot | Hibernate | JDBC</div>
+      <div class="skill-row"><span class="skill-label">Databases:</span> Oracle XE | SQLite</div>
+      <div class="skill-row"><span class="skill-label">Languages:</span> Java | C | SQL | HTML | JavaScript</div>
+      <div class="skill-row"><span class="skill-label">Tools:</span> Maven | Git | GitHub</div>
+    </div>
+  </div>
+
+  <!-- INTERNSHIP -->
+  <div class="section">
+    <div class="section-title">Internship</div>
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="entry-title">AI for Sustainability Virtual Intern – </span>
+          <span class="entry-org">IBM SkillsBuild | AICTE &amp; 1M1B</span>
+        </div>
+        <div class="entry-date">May 2026 – July 2026</div>
+      </div>
+      <ul>
+        <li>Training in AI/ML, LLMs, RAG, and Agentic AI; completing AICTE-recognized sustainability project assignments.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="entry-title">EcoShare AI</span>
+          <a class="entry-link" href="https://github.com/DINESH0822/EcoShare-AI" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+      <span class="tech-tags">React | Vite | Tailwind CSS | Python FastAPI | MongoDB Atlas | JWT | REST APIs | AI Integration</span>
+      <ul>
+        <li>Full-stack web application promoting sustainable living — users can share, donate, and exchange reusable items with AI-powered recommendations and secure JWT authentication.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="entry-title">Employee Management System</span>
+          <a class="entry-link" href="https://github.com/DINESH0822/springboot-oracle-jpa-hibernate" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+      <span class="tech-tags">Java 17 | Spring Boot 3 | Oracle XE | Hibernate 6 | JPA | REST API</span>
+      <ul>
+        <li>Developed backend with Spring Boot &amp; Hibernate; implemented REST APIs for CRUD and Search operations.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="entry-title">Network-Based Smart Attendance System</span>
+          <a class="entry-link" href="https://github.com/DINESH0822/Network-Based-Smart-Attendance-System" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+      <span class="tech-tags">Java | Core Java | Networking | InetAddress | File I/O</span>
+      <ul>
+        <li>Automated attendance via IP-based validation using Java InetAddress API; logs timestamped records.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="entry-title">Password Strength Analyzer</span>
+          <a class="entry-link" href="https://github.com/DINESH0822/password-strength-analyzer" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+      <span class="tech-tags">Python | HTML | JavaScript | Regex</span>
+      <ul>
+        <li>Real-time checker validating 5 security criteria — outputs Weak/Medium/Strong rating with show/hide toggle.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul class="simple-list">
+      <li><strong>Introduction to Cybersecurity</strong> – Cisco Networking Academy</li>
+      <li><strong>Cybersecurity Fundamentals &amp; Getting Started with AI</strong> – IBM SkillsBuild</li>
+      <li><strong>Quantum Fundamentals (4-Week Program)</strong> – WISER, Qubitech &amp; Amaravati Quantum Valley</li>
+    </ul>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section">
+    <div class="section-title">Achievements</div>
+    <ul class="simple-list">
+      <li>3rd Prize – National Symposium Technical Quiz (35 inter-college teams).</li>
+      <li>Team Lead – Research Paper on Federated Learning for Privacy Protection, National Conference, KEC.</li>
+      <li>National Karate Champion.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

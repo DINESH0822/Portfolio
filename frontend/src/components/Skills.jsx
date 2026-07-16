@@ -12,10 +12,10 @@ const skillCategories = [
     bg: '#EFF6FF',
     border: '#BFDBFE',
     skills: [
-      { name: 'Java', level: 'Advanced', pct: 90 },
+      { name: 'Java', level: 'Intermediate', pct: 90 },
       { name: 'Python', level: 'Intermediate', pct: 65 },
       { name: 'JavaScript', level: 'Intermediate', pct: 65 },
-      { name: 'SQL', level: 'Advanced', pct: 88 },
+      { name: 'SQL', level: 'Intermediate', pct: 88 },
       { name: 'C', level: 'Intermediate', pct: 60 },
     ],
   },
@@ -27,10 +27,10 @@ const skillCategories = [
     bg: '#F5F3FF',
     border: '#DDD6FE',
     skills: [
-      { name: 'React', level: 'Advanced', pct: 88 },
-      { name: 'HTML5', level: 'Advanced', pct: 92 },
-      { name: 'CSS3', level: 'Advanced', pct: 88 },
-      { name: 'Tailwind CSS', level: 'Advanced', pct: 87 },
+      { name: 'React', level: 'Intermediate', pct: 88 },
+      { name: 'HTML5', level: 'Intermediate', pct: 92 },
+      { name: 'CSS3', level: 'Intermediate', pct: 88 },
+      { name: 'Tailwind CSS', level: 'Intermediate', pct: 87 },
       { name: 'Vite', level: 'Intermediate', pct: 68 },
     ],
   },
@@ -70,8 +70,8 @@ const skillCategories = [
     bg: '#FEF2F2',
     border: '#FECACA',
     skills: [
-      { name: 'Git & GitHub', level: 'Advanced', pct: 88 },
-      { name: 'VS Code', level: 'Advanced', pct: 92 },
+      { name: 'Git & GitHub', level: 'Intermediate', pct: 88 },
+      { name: 'VS Code', level: 'Intermediate', pct: 92 },
       { name: 'Maven', level: 'Intermediate', pct: 65 },
       { name: 'Postman', level: 'Intermediate', pct: 68 },
     ],
@@ -201,17 +201,13 @@ export default function Skills() {
                 {/* Footer indicator */}
                 <div className="mt-6 pt-4 border-t border-[#F1F5F9] flex items-center justify-between">
                   <div className="flex gap-2 text-[10px] font-semibold">
-                    <span className="flex items-center gap-1 text-[#2563EB]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB] inline-block" />
-                      Advanced
-                    </span>
                     <span className="flex items-center gap-1 text-[#059669]">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#059669] inline-block" />
                       Intermediate
                     </span>
                   </div>
                   <span className="text-[10px] text-[#9CA3AF]">
-                    {cat.skills.filter(s => s.level === 'Advanced').length} advanced
+                    {cat.skills.length} intermediate
                   </span>
                 </div>
               </motion.div>
@@ -222,9 +218,9 @@ export default function Skills() {
           <motion.div variants={fadeUp} className="mt-12 bg-white rounded-2xl p-6 card-shadow grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
               ['22+', 'Total Skills'],
-              ['8', 'Advanced Proficiency'],
-              ['14', 'Intermediate Level'],
+              ['22+', 'Intermediate Level'],
               ['5', 'Tech Categories'],
+              ['5', 'Skill Domains'],
             ].map(([num, label]) => (
               <div key={label}>
                 <div className="text-2xl font-black text-gradient">{num}</div>

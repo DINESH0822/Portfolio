@@ -174,7 +174,7 @@ export default function Hero() {
           {/* Name */}
           <motion.h1 variants={item} className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight text-[#111827] leading-none">
             M{' '}
-            <span className="text-gradient">Dinesh</span>
+            <span className="text-gradient">DINESH</span>
           </motion.h1>
 
           {/* Typed subtitle */}
@@ -205,8 +205,10 @@ export default function Hero() {
             </motion.button>
 
             <motion.a
-              href="#"
-              onClick={(e) => { e.preventDefault(); alert('Resume download — place Dinesh_Resume.pdf in /public/'); }}
+              href="/M_DINESH_Resume.html"
+              download="M_DINESH_Resume.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-secondary"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}

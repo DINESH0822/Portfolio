@@ -33,7 +33,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#3B82F6] flex items-center justify-center shadow-lg shadow-blue-900/50">
                 <span className="text-white font-black text-lg">D</span>
               </div>
-              <span className="text-xl font-bold">M Dinesh</span>
+              <span className="text-xl font-bold">M DINESH</span>
             </div>
             <p className="text-[#9CA3AF] text-sm leading-relaxed max-w-xs">
               Java Full Stack Developer & AI Enthusiast building scalable applications and innovative software solutions.
@@ -91,8 +91,8 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6B7280]">
-          <span>© {year} M Dinesh. All rights reserved.</span>
-          <span>Designed & Developed by <span className="text-[#9CA3AF] font-semibold">M Dinesh</span></span>
+          <span>© {year} M DINESH. All rights reserved.</span>
+          <span>Designed & Developed by <span className="text-[#9CA3AF] font-semibold">M DINESH</span></span>
           <span>Built with React, Vite & Tailwind CSS</span>
         </div>
       </div>

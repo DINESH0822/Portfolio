@@ -78,7 +78,7 @@ export default function Navbar() {
               <span className="text-white font-black text-lg tracking-tighter">D</span>
             </div>
             <span className="text-base font-bold text-[#111827] group-hover:text-[#2563EB] transition-colors hidden sm:block">
-              M Dinesh
+              M DINESH
             </span>
           </Link>
 

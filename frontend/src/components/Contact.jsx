@@ -11,7 +11,7 @@ const contactInfo = [
 
 const social = [
   { icon: Github, label: 'GitHub', href: 'https://github.com/DINESH0822', handle: '@DINESH0822', color: '#111827' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/dinesh-m-8294802bb', handle: 'M Dinesh', color: '#0A66C2' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/dinesh-m-8294802bb', handle: 'M DINESH', color: '#0A66C2' },
 ];
 
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.1 } } };

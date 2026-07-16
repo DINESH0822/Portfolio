@@ -36,7 +36,7 @@ export default function Loader({ onComplete }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              <h1 className="text-2xl font-black text-[#111827] tracking-tight">M Dinesh</h1>
+              <h1 className="text-2xl font-black text-[#111827] tracking-tight">M DINESH</h1>
               <p className="text-[#6B7280] text-sm font-semibold tracking-widest uppercase mt-1">
                 Full Stack Developer
               </p>
