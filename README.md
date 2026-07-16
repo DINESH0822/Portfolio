@@ -1,4 +1,4 @@
-# Recruiter-Focused Full Stack Developer Portfolio
+# Full Stack Developer Portfolio
 
 This portfolio is deployed as a frontend-only application using Vercel and Web3Forms for contact form delivery. The complete FastAPI backend with JWT authentication, MongoDB Atlas integration, CRUD APIs and Admin Panel remains inside this repository to demonstrate Full Stack Development skills.
 
